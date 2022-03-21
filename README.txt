@@ -1,3 +1,5 @@
+EXAMPLE OUTPUT:
+
 ./russian_peasants_algorithm
 This program uses the 'Russian Peasant's Algorithm' to multiply 2 numbers.
 It halves the multiplier and doubles the multiplicand until the multiplier reaches 1.

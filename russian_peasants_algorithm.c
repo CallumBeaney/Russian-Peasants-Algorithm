@@ -35,3 +35,5 @@ void calculate(int one, int two)
 
     calculate( (one * 0.5), (two * 2) );
 }
+
+// TODO: Implement fgets() + atoi() over scanf() to limit user input to numbers only
