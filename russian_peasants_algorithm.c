@@ -10,7 +10,7 @@ int main(void)
     int one, two;
     printf("This program uses the 'Russian Peasant's Algorithm' to multiply 2 numbers.\n" 
            "It halves the multiplier and doubles the multiplicand until the multiplier reaches 1.\n"
-           "The sum is formed by adding each doubled multiplicand when the corresponding divided multiplier of which is an odd number.\n\n"
+           "The sum is formed by adding each doubled multiplicand when the corresponding divided multiplier is an odd number.\n\n"
            "1st number: \t"); scanf("%d", &one);
     printf("2nd number: \t"); scanf("%d", &two);
     
@@ -35,25 +35,3 @@ void calculate(int one, int two)
 
     calculate( (one * 0.5), (two * 2) );
 }
-
-/* EXAMPLE OUTPUT:
-
-./russian_peasants_algorithm
-This program uses the 'Russian Peasant's Algorithm' to multiply 2 numbers.
-It halves the multiplier and doubles the multiplicand until the multiplier reaches 1.
-The sum is formed by adding each doubled multiplicand when the corresponding divided multiplier of which is an odd number.
-
-1st number:     123
-2nd number:     345
-
-   (%2) 123     345 (x2)
-
-        123     345     (sum = 345)
-        61      690     (sum = 1035)
-        30      1380
-        15      2760    (sum = 3795)
-        7       5520    (sum = 9315)
-        3       11040   (sum = 20355)
-        1       22080   (sum = 42435)
-
-Final sum:      42435 */
